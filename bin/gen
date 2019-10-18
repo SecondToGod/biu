@@ -1,0 +1,31 @@
+#! /usr/bin/env node
+const fs = require('fs')
+const chalk = require('chalk')
+const cmd = require('commander')
+const pkg =  require('../package.json')
+const { inquirerFn,downloadFn } = require('../lib/init')
+
+cmd.version(pkg.version, '-v, --version')
+
+cmd.command('init <dirname>')
+   .description(pkg.description)
+   .action(dirname => {
+     if(fs.existsSync(dirname)) {
+       return console.log(chalk.yellow(`dirname ${dirname} is exist`))
+     }
+     inquirerFn().then(answers => {
+       downloadFn(answers,dirname)
+     })
+})
+
+cmd.arguments('<command>').action(command => {
+  cmd.outputHelp()
+  console.log(' ')
+  console.log(`error: unknown option '${cmd}`)
+})
+
+cmd.parse(process.argv)
+
+if(!process.argv.slice(2).length){
+  cmd.outputHelp()
+}
