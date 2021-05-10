@@ -42,11 +42,6 @@ bl@^1.0.0:
     readable-stream "^2.3.5"
     safe-buffer "^5.1.1"
 
-bluebird@^3.5.3:
-  version "3.7.0"
-  resolved "https://registry.npm.taobao.org/bluebird/download/bluebird-3.7.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbluebird%2Fdownload%2Fbluebird-3.7.0.tgz#56a6a886e03f6ae577cffedeb524f8f2450293cf"
-  integrity sha1-VqaohuA/auV3z/7etST48kUCk88=
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npm.taobao.org/brace-expansion/download/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -526,9 +521,9 @@ isurl@^1.0.0-alpha5:
     is-object "^1.0.1"
 
 lodash@^4.17.12:
-  version "4.17.15"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.2.0:
   version "2.2.0"
